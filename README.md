@@ -1,4 +1,4 @@
-# Anatomy Atelier
+# Anatomy Rivet
 
 An interactive 3D anatomy atlas. Ten organs render as real GLB specimens you
 can rotate, cross-section, isolate and label, wrapped in an illustrated study

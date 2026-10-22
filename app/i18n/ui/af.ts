@@ -2,15 +2,15 @@ import type { BaseUiDictionary } from "../types";
 
 export const ui: BaseUiDictionary = {
   meta: {
-    title: "Anatomy Atelier — Verken jou lyf van binne",
+    title: "Anatomy Rivet — Verken jou lyf van binne",
     description: "Verken die hart, brein, longe en meer in 3D, beantwoord elke dag ’n nuwe vraag oor die liggaam, en sien organe op ware grootte in jou kamer. Anatomie vir nuuskierige kinders, in Engels, isiXhosa, isiZulu en Afrikaans.",
-    ogTitle: "Anatomy Atelier — Verken jou lyf van binne",
+    ogTitle: "Anatomy Rivet — Verken jou lyf van binne",
     ogDescription: "3D-organe, ’n daaglikse liggaamsvraag en AR op ware grootte — anatomie vir nuuskierige kinders.",
-    imageAlt: "’n Anatomiese hart wat bo ’n voetstuk sweef, langs die Anatomy Atelier-woordmerk",
+    imageAlt: "’n Anatomiese hart wat bo ’n voetstuk sweef, langs die Anatomy Rivet-woordmerk",
   },
   brand: {
     tagline: "Verken jou lyf van binne",
-    home: "Anatomy Atelier-tuisblad",
+    home: "Anatomy Rivet-tuisblad",
   },
   nav: {
     explore: "Verken",

@@ -43,10 +43,10 @@ jobs:
       - name: Root redirect
         run: |
           cat > out/index.html <<'HTML'
-          <!doctype html><meta charset="utf-8"><title>Anatomy Atelier</title>
+          <!doctype html><meta charset="utf-8"><title>Anatomy Rivet</title>
           <meta http-equiv="refresh" content="0; url=./en/"><link rel="canonical" href="./en/">
           <script>location.replace("./en/" + location.search + location.hash)</script>
-          <a href="./en/">Anatomy Atelier</a>
+          <a href="./en/">Anatomy Rivet</a>
           HTML
           touch out/.nojekyll
 

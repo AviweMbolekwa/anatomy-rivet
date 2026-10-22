@@ -2,7 +2,7 @@ import type { NextConfig } from "next";
 import { defaultLocale } from "./app/i18n/config";
 
 /**
- * GitHub Pages build: `PAGES_BASE_PATH=/anatomy-atelier npm run build:pages`.
+ * GitHub Pages build: `PAGES_BASE_PATH=/anatomy-rivet npm run build:pages`.
  * Pages serves static files from a sub-path, so that build exports plain HTML
  * under the repo name. Every other target (local dev, Cloudflare, Vercel)
  * leaves this unset and keeps the normal server build.

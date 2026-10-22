@@ -35,7 +35,7 @@ export async function generateMetadata({
     metadataBase: new URL(siteUrl),
     title: ui.meta.title,
     description: ui.meta.description,
-    applicationName: "Anatomy Atelier",
+    applicationName: "Anatomy Rivet",
     alternates: {
       canonical: withBase(`/${locale}`),
       // Lets search engines serve the right language and offer the rest.
@@ -55,7 +55,7 @@ export async function generateMetadata({
     },
     openGraph: {
       type: "website",
-      siteName: "Anatomy Atelier",
+      siteName: "Anatomy Rivet",
       locale: config.intl,
       alternateLocale: locales.filter((entry) => entry.code !== locale).map((entry) => entry.intl),
       title: ui.meta.ogTitle,

@@ -2,15 +2,15 @@ import type { BaseUiDictionary } from "../types";
 
 export const ui: BaseUiDictionary = {
   meta: {
-    title: "Anatomy Atelier — Hlola umzimba wakho ngaphakathi",
+    title: "Anatomy Rivet — Hlola umzimba wakho ngaphakathi",
     description: "Hlola inhliziyo, ubuchopho, amaphaphu nokunye ku-3D, uphendule umbuzo omusha ngomzimba nsuku zonke, futhi ubone izitho ngobukhulu bazo bangempela ekamelweni lakho. I-anatomy yezingane ezinelukuluku, ngesiNgisi, isiXhosa, isiZulu nesiBhunu.",
-    ogTitle: "Anatomy Atelier — Hlola umzimba wakho ngaphakathi",
+    ogTitle: "Anatomy Rivet — Hlola umzimba wakho ngaphakathi",
     ogDescription: "Izitho ku-3D, umbuzo wansuku zonke ne-AR ngobukhulu bangempela — i-anatomy yezingane ezinelukuluku.",
-    imageAlt: "Inhliziyo entanta ngaphezu kwesisekelo, eceleni kwegama le-Anatomy Atelier",
+    imageAlt: "Inhliziyo entanta ngaphezu kwesisekelo, eceleni kwegama le-Anatomy Rivet",
   },
   brand: {
     tagline: "Hlola umzimba wakho ngaphakathi",
-    home: "Ikhaya le-Anatomy Atelier",
+    home: "Ikhaya le-Anatomy Rivet",
   },
   nav: {
     explore: "Hlola",

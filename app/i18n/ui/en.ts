@@ -2,13 +2,13 @@ import type { BaseUiDictionary } from "../types";
 
 export const ui: BaseUiDictionary = {
   meta: {
-    title: "Anatomy Atelier — Explore the inside of you",
+    title: "Anatomy Rivet — Explore the inside of you",
     description: "Explore the heart, brain, lungs and more in 3D, answer a new body question every day, and see organs life-size in your room. Anatomy for curious kids, in English, isiXhosa, isiZulu and Afrikaans.",
-    ogTitle: "Anatomy Atelier — Explore the inside of you",
+    ogTitle: "Anatomy Rivet — Explore the inside of you",
     ogDescription: "3D organs, a daily body question and life-size AR — anatomy for curious kids.",
-    imageAlt: "An anatomical heart specimen floating above a plinth, beside the Anatomy Atelier wordmark",
+    imageAlt: "An anatomical heart specimen floating above a plinth, beside the Anatomy Rivet wordmark",
   },
-  brand: { tagline: "Explore the inside of you", home: "Anatomy Atelier home" },
+  brand: { tagline: "Explore the inside of you", home: "Anatomy Rivet home" },
   nav: { explore: "Explore", systems: "Systems", lessons: "Lessons", library: "Library", notes: "Notes" },
   search: { placeholder: "Search organs, topics…" },
   profile: { open: "Open learner profile" },

@@ -24,13 +24,13 @@ async function render(path) {
   );
 }
 
-test("server-renders the English Anatomy Atelier page, not the old starter skeleton", async () => {
+test("server-renders the English Anatomy Rivet page, not the old starter skeleton", async () => {
   const response = await render("/en");
   assert.equal(response.status, 200);
   assert.match(response.headers.get("content-type") ?? "", /^text\/html\b/i);
 
   const html = await response.text();
-  assert.match(html, /Anatomy Atelier/);
+  assert.match(html, /Anatomy Rivet/);
   assert.match(html, /<html[^>]*lang="en"/i);
   // The old vinext-starter skeleton must be gone for good.
   assert.doesNotMatch(html, /Your site is taking shape/);
