@@ -11,7 +11,6 @@ import {
   Search,
   Check,
   Crosshair,
-  Sparkles,
   TriangleAlert,
   Trophy,
   X,
@@ -501,8 +500,7 @@ export function OrganViewer({
 
       {!quizActive && (
       <aside className="tip-note" aria-label={t.viewer.tip}>
-        <span><Sparkles size={15} /> {t.viewer.tip}</span>
-        <p>{t.viewer.tipDrag}<br />{t.viewer.tipScroll}<br />{t.viewer.tipClick}</p>
+        <p>{t.viewer.tipDrag} · {t.viewer.tipScroll} · {t.viewer.tipClick}</p>
       </aside>
       )}
 

@@ -187,7 +187,7 @@ export class AnatomyViewer {
 
     this.plinth = new THREE.Mesh(
       new THREE.CylinderGeometry(2.3, 2.48, 0.34, 56),
-      new THREE.MeshStandardMaterial({ color: 0xead7c1, roughness: 0.78, metalness: 0 }),
+      new THREE.MeshStandardMaterial({ color: 0xecebe8, roughness: 0.8, metalness: 0 }),
     );
     this.plinth.position.y = PLINTH_Y;
     this.scene.add(this.plinth);
@@ -218,7 +218,7 @@ export class AnatomyViewer {
     this.scene.add(
       new THREE.Points(
         particleGeometry,
-        new THREE.PointsMaterial({ color: 0xe7a18e, size: 0.013, transparent: true, opacity: 0.16 }),
+        new THREE.PointsMaterial({ color: 0xa1a1aa, size: 0.012, transparent: true, opacity: 0.12 }),
       ),
     );
   }
