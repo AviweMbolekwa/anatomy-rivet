@@ -230,18 +230,19 @@ button:focus-visible, input:focus-visible, canvas:focus-visible {
 /* ------------------------------------------------------------------ viewer */
 
 .viewer-shell { position: absolute; inset: 64px 0 0; overflow: hidden; min-width: 0; }
-.viewer-glow { position: absolute; width: 520px; height: 520px; left: calc(50% - var(--info-w) / 2 + var(--library-w) / 2); top: 48%; transform: translate(-50%,-50%); border-radius: 50%; background: color-mix(in srgb, var(--organ-accent), transparent 93%); filter: blur(90px); }
-/* Shrunk from the end and the bottom only, so the canvas origin — which the
-   hotspot callouts are positioned from — stays at the shell's corner. */
-.three-mount { position: absolute; inset: 0; right: calc(var(--info-w) - var(--library-w)); bottom: 84px; }
-[dir="rtl"] .three-mount { right: 0; }
+.viewer-glow { position: absolute; width: 520px; height: 520px; inset-inline-start: calc(50% - var(--info-w) / 2 + var(--library-w) / 2); top: 48%; transform: translate(-50%,-50%); border-radius: 50%; background: color-mix(in srgb, var(--organ-accent), transparent 93%); filter: blur(90px); }
+/* Shrunk from the right and the bottom only, so the canvas origin — which the
+   hotspot callouts are positioned from — stays at the shell's corner. RTL keeps
+   the full width, since shrinking from the left would move that origin. */
+.three-mount { position: absolute; inset: 0; left: 0; right: calc(var(--info-w) - var(--library-w)); bottom: 84px; }
+[dir="rtl"] .three-mount { left: 0; right: 0; }
 .three-mount canvas { width: 100%; height: 100%; display: block; touch-action: none; }
 
 .viewer-tools {
   position: absolute;
   z-index: 6;
   bottom: var(--edge);
-  left: calc(50% - var(--info-w) / 2 + var(--library-w) / 2);
+  inset-inline-start: calc(50% - var(--info-w) / 2 + var(--library-w) / 2);
   transform: translateX(-50%);
   display: flex;
   gap: 2px;
@@ -252,7 +253,6 @@ button:focus-visible, input:focus-visible, canvas:focus-visible {
   backdrop-filter: blur(18px);
   box-shadow: var(--shadow);
 }
-[dir="rtl"] .viewer-tools { left: 50%; }
 .tool-button { min-width: 56px; padding: 0 8px; height: 50px; border: 0; border-radius: 10px; background: transparent; color: var(--ink); display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px; cursor: pointer; font-size: 10.5px; font-weight: 500; }
 .tool-button span { color: var(--muted); white-space: nowrap; }
 .tool-button.active { background: #f4f4f5; color: var(--coral); }
@@ -265,14 +265,13 @@ button:focus-visible, input:focus-visible, canvas:focus-visible {
   position: absolute;
   z-index: 4;
   top: calc(var(--top) - 60px);
-  left: calc(50% - var(--info-w) / 2 + var(--library-w) / 2);
+  inset-inline-start: calc(50% - var(--info-w) / 2 + var(--library-w) / 2);
   transform: translateX(-50%);
   color: var(--muted);
   font-size: 12.5px;
   white-space: nowrap;
   pointer-events: none;
 }
-[dir="rtl"] .tip-note { left: 50%; }
 .tip-note p { margin: 0; }
 
 /* Anchor point only — the viewer writes the transform each frame so tracking a
@@ -524,8 +523,8 @@ button.organ-card-image:focus-visible { outline: 2px solid var(--ink); outline-o
   .mobile-library-trigger { display: flex; }
   .workspace { height: auto; min-height: 0; padding: 0 var(--edge); }
   .viewer-shell { position: relative; inset: auto; height: 68vh; min-height: 520px; border: 1px solid var(--line); border-radius: 20px; background: radial-gradient(ellipse 70% 60% at 50% 45%, #fff, #f1f1ef); }
-  .three-mount { right: 0; bottom: 0; }
-  .viewer-glow, .viewer-tools, .tip-note { left: 50%; }
+  .three-mount { left: 0; right: 0; bottom: 0; }
+  .viewer-glow, .viewer-tools, .tip-note { inset-inline-start: 50%; }
   .auto-rotate { inset-inline-end: var(--edge); }
   .view-caption { inset-inline-start: var(--edge); top: var(--edge); }
   .tip-note { top: auto; bottom: calc(var(--edge) + 72px); }
