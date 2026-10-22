@@ -36,7 +36,8 @@ jobs:
         run: npm run build:pages
         env:
           PAGES_BASE_PATH: /${{ github.event.repository.name }}
-          NEXT_PUBLIC_SITE_URL: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}
+          # Origin only: withBase() already adds the repo path to every URL
+          NEXT_PUBLIC_SITE_URL: https://${{ github.repository_owner }}.github.io
 
       # A static host can't redirect "/", so send bare visits to the English
       # page — the same thing next.config's redirect does on a server.
