@@ -509,6 +509,9 @@ button.organ-card-image:focus-visible { outline: 2px solid var(--ink); outline-o
   .learning-cards { grid-template-columns: repeat(3, 1fr); --art-max: 260px; }
   .search-box { width: min(100%, 190px); }
   .tool-button { min-width: 50px; padding: 0 5px; }
+  /* The label is a bare text node, so a zero font size hides it visually while
+     screen readers still announce it. */
+  .auto-rotate { font-size: 0; gap: 6px; }
 }
 
 /* Below this the floating panels would crowd the specimen, so the page
@@ -525,7 +528,7 @@ button.organ-card-image:focus-visible { outline: 2px solid var(--ink); outline-o
   .viewer-shell { position: relative; inset: auto; height: 68vh; min-height: 520px; border: 1px solid var(--line); border-radius: 20px; background: radial-gradient(ellipse 70% 60% at 50% 45%, #fff, #f1f1ef); }
   .three-mount { left: 0; right: 0; bottom: 0; }
   .viewer-glow, .viewer-tools, .tip-note { inset-inline-start: 50%; }
-  .auto-rotate { inset-inline-end: var(--edge); }
+  .auto-rotate { inset-inline-end: var(--edge); font-size: 12px; gap: 8px; }
   .view-caption { inset-inline-start: var(--edge); top: var(--edge); }
   .tip-note { top: auto; bottom: calc(var(--edge) + 72px); }
   .info-panel { position: static; width: auto; margin-top: 12px; display: grid; grid-template-columns: 1fr 1.2fr; gap: 0 28px; }
